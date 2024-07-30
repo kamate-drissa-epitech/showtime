@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/ticket/create" method="post">
+        <input type="number" name="quantity" id="" placeholder="Combien de tickets voulez-vous ?">
+        <input type="text" name="eventId"  value="{{ eventId }}" hidden>
+        {{!-- <input type="text" name="TicketNumber"  value="{{ TicketNumber }}" hidden> --}}
+        <button type="submit" onclick={generate}>Reserver</button>
+    </form>
+</body>
+</html>
+
+{{!-- <script>
+    import QRCode from "qrcode"
+    const generate  = () => {
+        QRCode.toDataURL(`http://localhost:3000/event/${ eventId }`)
+    }
+</script> --}}

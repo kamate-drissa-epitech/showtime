@@ -1,0 +1,27 @@
+My Shop Time
+
+Spécification techniques 
+
+	front / back : nestjs, Tailwind
+
+Outil de Communication : Teams
+
+Outil de planification: Trello
+
+Base de données : Mongodb
+
+Hébergement : Hostinger
+
+Fonctionnalités supplémentaires: Impression du ticket, Confirmation de réservation par mail 
+
+
+Structure de la base de données:  
+
+Tables : users (id, name, email, password, created_at, update_at, is_admin, favorits)
+	 events (title, genre, event_start, event_end, location, number_of_place, artist, image, user_id)
+	 tickets (numero, created_at, qr_code, event_id)
+
+Exigence : - Aucun travail sur main & staging
+	   - Obligation de prévenir avant chaque push
+	   - Formatage des variables : Camel Case nomDeMaVariable)
+	   - Formatage des messages git : "[ACTION]: le message"
